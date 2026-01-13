@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Lugares para ver - Capital</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="/01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="/01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="/05-carrinho/lista_artigos.html"><img src="/imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="/06-favoritos/lista_fav.html"><img class="icon" src="/imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="/07-notificacoes/updates.html"><img class="icon" src="/imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="/08-reservas/atividades.html"><img class="icon" src="/imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/09-Login/index_apos_login.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="/index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--informaçao sobre capital-->
+        <section>
+            <h2>Funchal</h2>
+            <p>
+                O Funchal é a capital da Ilha da Madeira, uma região autónoma de Portugal situada no 
+                oceano Atlântico. A cidade localiza-se na costa sul da ilha e é o principal centro político, 
+                económico e cultural do arquipélago.
+            </p>
+            <p>
+                Fundado em 1421, o Funchal desenvolveu-se inicialmente graças à agricultura, especialmente ao 
+                cultivo da cana-de-açúcar, e mais tarde ao comércio do vinho da Madeira, conhecido 
+                internacionalmente. Atualmente, o turismo é a principal atividade económica da cidade, 
+                atraindo visitantes de todo o mundo pelo seu clima ameno, paisagens naturais e hospitalidade.
+            </p>
+            <p>
+                O Funchal possui importantes pontos de interesse, como a Sé Catedral do Funchal, o Mercado dos 
+                Lavradores, o Jardim Botânico e a Zona Velha, conhecida pelas suas ruas históricas e portas 
+                pintadas. A cidade é também famosa pelas suas festas tradicionais, como a Festa da Flor e as 
+                celebrações de Fim de Ano, com um dos maiores espetáculos de fogo de artifício da Europa.
+            </p>
+            <p>
+                Com uma combinação de história, natureza e modernidade, o Funchal é uma cidade vibrante que 
+                representa a identidade e a cultura madeirense.
+            </p>
+        </section>
+        <!--se catedral funchal-->
+        <section>
+            <h3>Sé Catedral do Funchal</h3>
+            <div class="horizontal">
+                <p>
+                    A Sé Catedral do Funchal, dedicada a Nossa Senhora da Assunção, foi construída entre 1493 e 1514, durante o 
+                    reinado de D. Manuel I, sendo um dos mais notáveis exemplos da arquitetura manuelina em Portugal. 
+                    Edificada em cantaria de basalto, apresenta um exterior sóbrio que contrasta com a riqueza do seu 
+                    interior, onde se destaca o impressionante teto de madeira de cedro em estilo mudéjar, considerado um 
+                    dos mais belos do país. A catedral possui ainda valiosas obras de arte sacra dos séculos XV e XVI, 
+                    incluindo pinturas flamengas, refletindo a importância histórica, religiosa e cultural da Madeira no 
+                    período dos Descobrimentos.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/se_catedral.jpeg" alt="catedral se" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos não se podem juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--mercado lavradores-->
+        <section>
+            <h3>Mercado dos Lavradores</h3>
+            <div class="horizontal">
+                <p>
+                   O Mercado dos Lavradores, situado no centro histórico do Funchal, é um dos espaços mais 
+                   emblemáticos da cidade. Inaugurado em 1940, destaca-se pela arquitetura tradicional e 
+                   pelos azulejos decorativos que retratam a vida e os costumes da Madeira. No mercado 
+                   encontram-se bancas de frutas tropicais, legumes, flores, especiarias e produtos regionais, 
+                   enquanto o piso inferior é dedicado à peixaria, com destaque para o peixe-espada-preto. 
+                   Além de ser um centro comercial, o Mercado dos Lavradores é um ponto turístico e cultural 
+                   importante, permitindo aos visitantes conhecerem os sabores, aromas e tradições da ilha. 
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/mercado-lavradores.jpeg" alt="mercado lavradores" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--jardim botanico-->
+        <section>
+            <h3>Jardim Botânico</h3>
+            <div class="horizontal">
+                <p>
+                   verdes mais importantes e visitados da ilha. Fundado em 1960, ocupa uma área de cerca de 8 
+                   hectares e abriga milhares de espécies de plantas provenientes de várias partes do mundo, 
+                   incluindo flores tropicais, árvores exóticas e plantas endémicas da Madeira. O jardim é 
+                   organizado em diferentes zonas temáticas, oferecendo percursos panorâmicos com vistas 
+                   deslumbrantes sobre a cidade e o porto do Funchal. Além do seu valor estético e recreativo, 
+                   o Jardim Botânico desempenha um papel fundamental na conservação da flora local e na 
+                   educação ambiental, sendo um espaço onde visitantes podem aprender sobre biodiversidade, 
+                   ecologia e a importância da preservação da natureza.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/jardim-botanico.jpeg" alt="jardim botanico" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like2" hidden>
+                            <label for="like2" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+
+        </section>
+        <!--zona velha-->
+        <section>
+            <h3>Zona Velha</h3>
+            <div class="horizontal">
+                <p>
+                   A Zona Velha do Funchal é o coração histórico da cidade e um dos locais mais característicos da 
+                   Madeira. Com ruas estreitas e calçadas tradicionais, esta área preserva a arquitetura colonial 
+                   portuguesa e inúmeros edifícios antigos, muitos deles restaurados e transformados em lojas, 
+                   restaurantes e galerias de arte. A Zona Velha é famosa pelas suas portas pintadas, um projeto 
+                   artístico que decorou diversas entradas de residências com pinturas coloridas e criativas, 
+                   atraindo turistas de todo o mundo. Além de ser um centro cultural e turístico, a Zona Velha 
+                   mantém viva a história e as tradições madeirenses, oferecendo um ambiente único onde o passado 
+                   e o presente da cidade se encontram.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/zona-velha.jpeg" alt="zona-velha" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like3" hidden>
+                            <label for="like3" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+
+        </section>
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="/10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+</body>
+</html>

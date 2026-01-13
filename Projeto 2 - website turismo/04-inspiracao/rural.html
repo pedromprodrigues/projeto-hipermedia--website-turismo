@@ -1,0 +1,580 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Inspiraçao - Trilhos e Levadas</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/ajuda.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="conteudo_direita">
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/index.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao para login-->
+                <div class="login">
+                    <a class="login_texto" href="/09-Login/login.html">Login</a>
+                    <img class="login_img" src="/imagens/icons8-accede-redondeado-derecho-50.png" alt="Imagem Login">
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+           <!--titulo da pagina-->
+        <section>
+            <h2>Rural</h2>
+        </section>
+        <!--tabs-->
+        <section class="section-tabs">
+            <div class="tabs">
+
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label for="tab1">Trilhos e Levadas</label>
+
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2">Natureza</label>
+
+                <input type="radio" name="tabs" id="tab3">
+                <label for="tab3">Desportos</label>
+
+                <!--conteudo tab 1-->
+                <div class="painel painel1">
+                    <h4>Trilhos e Levadas</h4>
+                    <!--levada caldeirao verde-->
+                    <section>
+                        <h3>Levada do Caldeirão Verde</h3>
+                        <div class="horizontal">
+                            <p>
+                                A Levada do Caldeirão Verde, localizada na Floresta Laurissilva da Madeira, é um do
+                                s trilhos pedestres mais famosos da ilha, conhecido pelas suas paisagens verdes exub
+                                erantes, túneis, pontes suspensas e cascatas. O percurso termina na impressionante c
+                                ascata do Caldeirão Verde, rodeada por vegetação densa, oferecendo vistas panorâmi
+                                cas únicas. Considerada de nível médio, a levada permite aos visitantes explorar a na
+                                tureza, flora e fauna locais, combinando aventura, tradição e contacto direto com a
+                                beleza natural da ilha.
+                                
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/caldeirao verde.jpeg" alt="caldeirao verder" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like" hidden>
+                                        <label for="like" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <!--vereda pico branco-->
+                    <section>
+                        <h3>Vereda do Pico Branco</h3>
+                        <div class="horizontal">
+                            <p>
+                                A Vereda do Pico Branco é um trilho pedestre popular no Porto Santo, oferecendo uma 
+                                caminhada de nível médio a difícil através de falésias, vales e flora endémica da ilha. 
+                                O percurso culmina no Pico Branco, o ponto mais alto da ilha, proporcionando vistas 
+                                panorâmicas sobre a vila, a praia dourada e o oceano Atlântico. É uma experiência ideal 
+                                para quem procura aventura, contacto com a natureza e paisagens inesquecíveis.
+                                
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/vereda do pico branco.jpeg" alt="caldeirao verder" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like2" hidden>
+                                        <label for="like2" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover mais informacoes-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--levada tornos-->
+                    <section>
+                        <h3>Levada dos Tornos</h3>
+                        <div class="horizontal">
+                            <p>
+                                A Levada dos Tornos, perto do Funchal, é um percurso pedestre tradicional da Madeira que a
+                                travessa encostas verdes, terrenos agrícolas e bosques, oferecendo vistas panorâmicas sob
+                                re a cidade, o vale dos Tornos e o oceano Atlântico. Originalmente construída para irrigação
+                                agrícola, a levada permite aos visitantes explorar a natureza, a flora típica da ilha e 
+                                a história das levadas, sendo um passeio ideal para quem procura trabalho leve, tranquilidade
+                                e contacto com a paisagem madeirense.
+                                
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/levada tornos.jpeg" alt="caldeirao verder" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like3" hidden>
+                                        <label for="like3" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--conteudo tab2-->
+                <div class="painel painel2">
+                    <h4>Natureza</h4>
+                    <!--parque ecologico do funchal-->
+                    <section>
+                        <h3>Parque Ecologico do Funchal</h3>
+                        <div class="horizontal">
+                            <p>
+                                O Parque Ecológico do Funchal é um espaço dedicado à preservação da flora e fauna da Madeira, 
+                                com trilhos pedestres, jardins temáticos e miradouros que permitem explorar a natureza de 
+                                forma tranquila. Os visitantes podem observar plantas endémicas, aves e vegetação típica da 
+                                ilha, aprendendo sobre a importância da conservação ambiental. É um destino ideal para 
+                                famílias, turistas e amantes do ar livre, combinando educação, lazer e contacto direto com 
+                                a biodiversidade madeirense.
+                                
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/paruqe ecologico.jpeg" alt="caldeirao verder" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like4" hidden>
+                                        <label for="like4" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--praia porto santo-->
+                    <section>
+                        <h3>Relaxar na Praia</h3>
+                        <div class="horizontal">
+                            <p>
+                                O Miradouro da Bica da Cana oferece vistas deslumbrantes sobre o mar e a paisagem costeira da Madeira. 
+                                Localizado num ponto elevado, permite apreciar vales verdes, encostas íngremes e o Atlântico ao fundo, 
+                                sendo ideal para quem procura fotografias memoráveis ou momentos de tranquilidade em contato com a 
+                                natureza.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/praia do porto santo.jpeg" alt="praia do porto santo" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like5" hidden>
+                                        <label for="like5" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Miradouro bica da cana-->
+                    <section>
+                        <h3>Bica da cana</h3>
+                        <div class="horizontal">
+                            <p>
+                               O Restaurante O Carvão Grilo, na Madeira, é conhecido pela sua cozinha tradicional grelhada 
+                               no carvão, oferecendo pratos típicos como espetadas, carnes e peixes frescos. Com um ambiente 
+                               acolhedor e familiar, é um ponto de referência para quem quer degustar a verdadeira gastronomia 
+                               madeirense, combinando sabores autênticos, ingredientes locais de qualidade e um serviço 
+                               simpático. 
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/miradouro-bica-cana.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like5" hidden>
+                                        <label for="lik5" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+                <div class="painel painel3">
+                    <h4>Desportos</h4>
+                    <!--zip-line-->
+                    <section>
+                        <h3>Zip Line</h3>
+                        <div class="horizontal">
+                            <p>
+                            A zip-line na Ilha da Madeira é uma atividade de aventura que combina emoção e contacto 
+                            com a natureza, permitindo deslizar por cabos suspensos a grandes alturas. Os percursos 
+                            oferecem vistas panorâmicas sobre montanhas, vales, florestas e o oceano Atlântico, pass
+                            ando por falésias, rios e levadas. Além de divertida, a zip-line proporciona uma experiên
+                            cia única de explorar a ilha de forma segura e inesquecível, vendo a paisagem natural da Ma
+                            deira de um ângulo completamente diferente.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/Zip-line.jpeg" alt="seixal" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like6" hidden>
+                                        <label for="like6" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--parapente-->
+                    <section>
+                        <h3>Parapente - Calheta</h3>
+                        <div class="horizontal">
+                            <p>
+                            O parapente na Ilha da Madeira é uma atividade de aventura que permite sobrevoar montanhas, 
+                            falésias, vales e o oceano Atlântico, oferecendo vistas panorâmicas únicas da ilha. Pode ser 
+                            praticado em tandem com instrutor ou por praticantes experientes, combinando adrenalina e 
+                            ontacto com a natureza. É uma experiência inesquecível para quem procura emoção, liberdade 
+                            e uma forma diferente de explorar a beleza natural da Madeira.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/parapente.jpeg" alt="parapente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like7" hidden>
+                                        <label for="like7" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--jeep safari-->
+                    <section>
+                        <h3>Jeep Safari Off Road
+                        </h3>
+                        <div class="horizontal">
+                            <p>
+                            O turismo de 4x4 no Porto Santo é uma forma emocionante de explorar a ilha, permitindo 
+                            conhecer praias, dunas, falésias e trilhos rurais de difícil acesso a pé. Os passeios ofe
+                            recem vistas panorâmicas do oceano Atlântico e podem incluir explicações sobre a histó
+                            ria, geologia e flora local, combinando aventura, contacto com a natureza e descoberta d
+                            a ilha. É uma experiência ideal para quem deseja explorar Porto Santo de forma diferente,
+                                divertida e inesquecível.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/4X4 Porto Santo.jpeg" alt="parapente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like8" hidden>
+                                        <label for="like8" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover mais informacoes-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar btn-popover" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+       
+                </div>
+            
+            </div>
+        </section>
+        <section>
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>1. Posso levar o meu cão em todos os passeios?</summary>
+                <p>Nem todos os passeios permitem cães. Verifique cada tour antes de reservar.</p>
+            </details>
+
+            <details>
+                <summary>2. O guia leva cães nos passeios?</summary>
+                <p>Sim, o guia pode levar os seus próprios cães, mas todos os animais são supervisionados e bem comportados para garantir a segurança de todos.</p>
+            </details>
+
+            <details>
+                <summary>3. Há limite de tamanho ou número de cães por passeio?</summary>
+                <p>Sim, para segurança e conforto, cada tour tem limites de cães e tamanho permitido.</p>
+            </details>
+
+            <details>
+                <summary>4. Preciso de vacinas ou certificados de saúde para o meu cão?</summary>
+                <p>Sim, todos os cães devem ter <strong>vacinas em dia</strong> e, preferencialmente, <strong>certificado de saúde atualizado</strong>.</p>
+            </details>
+
+            <details>
+                <summary>5. É necessário usar trela ou focinheira?</summary>
+                <p>Sim, trela é obrigatória; focinheira pode ser exigida em certas atividades ou raças.</p>
+            </details>
+
+            <details>
+                <summary>6. O meu cão será seguro durante o transporte?</summary>
+                <p>Sim, todos os veículos e equipamentos são adaptados para transporte seguro de cães.</p>
+            </details>
+
+            <details>
+                <summary>7. Existem taxas adicionais para levar cães?</summary>
+                <p>Alguns tours cobram um valor simbólico por animal de estimação.</p>
+            </details>
+
+            <details>
+                <summary>8. Posso reservar apenas para o meu cão e acompanhante?</summary>
+                <p>Sim, desde que haja disponibilidade. Informe a empresa no momento da reserva.</p>
+            </details>
+
+            <details>
+                <summary>9. E se o meu cão ficar ansioso durante o passeio?</summary>
+                <p>O guia adapta o ritmo do passeio e garante <strong>supervisão constante</strong>, inclusive com os seus próprios cães como exemplo de comportamento calmo.</p>
+            </details>
+
+            <details>
+                <summary>10. Meu cão pode interagir com outros cães do passeio?</summary>
+                <p>Sim, sempre de forma supervisionada para garantir segurança e conforto de todos os animais.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Comentários</h2>
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Maria</h4>
+                    <img src="/imagens/perfil1.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Adorei o passeio! Levar o meu cão foi super fácil, o guia foi muito atencioso e todos os 
+                        animais se deram bem. Recomendo a todos que querem viajar com os seus pets!” – Maria S.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>Ana</h4>
+                    <img src="/imagens/perfil2.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Muito profissional e acolhedor. O guia levou os seus próprios cães, que ajudaram a manter 
+                        os nossos calmos e confortáveis durante o passeio.” – Ana R.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>João</h4>
+                    <img src="/imagens/perfil3.jpeg" alt="catamaran" class="fund_img">
+                    <p>
+                        “Experiência incrível! O meu cão parecia estar tão feliz quanto eu. 
+                        Tudo organizado, seguro e com muita atenção aos animais.” – João P.
+                    </p>
+                </div>
+                
+            </div>
+           
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404.html">Instagram</a>
+                <a href="10-erro/erro404.html">Facebook</a>
+                <a href="/10-erro/erro404.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

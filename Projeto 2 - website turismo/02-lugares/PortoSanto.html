@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Lugares para ver - Porto Santo</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/ajuda.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="conteudo_direita">
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/index.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao para login-->
+                <div class="login">
+                    <a class="login_texto" href="/09-Login/login.html">Login</a>
+                    <img class="login_img" src="/imagens/icons8-accede-redondeado-derecho-50.png" alt="Imagem Login">
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--informaçao sobre porto santo-->
+        <section>
+            <h2>Porto Santo</h2>
+            <p>
+                Porto Santo é uma ilha pertencente ao arquipélago da Madeira, localizada a cerca de 43 km 
+                a nordeste da ilha principal. Comparada à Madeira, Porto Santo é menor e mais tranquila, com 
+                cerca de 42 km² e uma população aproximada de 5 mil habitantes. A ilha é especialmente conhecida
+                pela sua praia dourada de 9 km de extensão, considerada uma das mais longas da Europa, com 
+                areia fina e águas cristalinas que atraem turistas em busca de sol, mar e relaxamento.
+            </p>
+            <p>
+                Além do turismo balnear, Porto Santo possui um património histórico e cultural significativo. 
+                Destacam-se a casa-museu de Cristóvão Colombo, local onde o navegador terá vivido temporariamente,
+                e a igreja de Nossa Senhora da Piedade, que remonta ao século XV. A ilha tem também pequenas 
+                vilas pitorescas, com casas tradicionais e uma atmosfera tranquila, refletindo a vida rural e 
+                costeira típica da região.
+            </p>
+            <p>
+                A natureza de Porto Santo é marcada por montanhas baixas, falésias, dunas e áreas de vegetação 
+                endémica, ideais para caminhadas, trilhos pedestres e observação da fauna e flora locais. 
+                A ilha oferece ainda atividades de lazer como mergulho, vela e pesca, aproveitando as suas 
+                guas calmas e cristalinas. Graças à combinação de praias, património histórico e paisagem 
+                atural preservada, Porto Santo é considerado um destino único no arquipélago da Madeira, 
+                ideal para turismo relaxante, cultural e de natureza.
+            </p>
+        </section>
+        <!--Praia do Porto Santo-->
+        <section>
+            <h3>Praia do Porto Santo</h3>
+            <div class="horizontal">
+                <p>
+                    A Praia de Porto Santo, com cerca de 9 km de extensão de areia dourada e águas cristalinas, 
+                    é a principal atração da ilha e uma das mais famosas do arquipélago da Madeira. Conhecida 
+                    pelas suas propriedades terapêuticas, a areia fina é recomendada para tratamentos de reuma
+                    tismo e relaxamento. A praia oferece condições ideais para banho, caminhadas à beira-mar, 
+                    desportos aquáticos e momentos de lazer em família, sendo rodeada por uma paisagem natural
+                     tranquila, com falésias e vistas panorâmicas sobre o oceano Atlântico, tornando-se um des
+                     tino imperdível para quem visita Porto Santo.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/praia do porto santo.jpeg" alt="praia do porto santo" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+        </section>
+        <!--Pico do castelo-->
+        <section>
+            <h3>Pico do Castelo</h3>
+            <div class="horizontal">
+                <p>
+                  O Pico do Castelo é um dos pontos mais altos e emblemáticos de Porto Santo, ofe
+                   recendo vistas panorâmicas deslumbrantes sobre a vila, a extensa praia dourada e 
+                   o oceano Atlântico. Formado por rochas vulcânicas, o pico destaca-se pela sua im
+                   portância histórica, já que no passado abrigou fortificações defensivas da ilha.
+                    É um local popular para caminhadas e fotografia, permitindo aos visitantes apre
+                    ciar a paisagem natural única de Porto Santo e compreender a geologia e a histó
+                    ria desta ilha tranquila e preservada.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/pico do castelo.jpeg" alt="pico do castelo" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+        </section>
+        <!--Ilheu do Porto Santo-->
+        <section>
+            <h3>Ilheu do Porto Santo</h3>
+            <div class="horizontal">
+                <p>
+                   O Ilhéu do Porto Santo é uma pequena ilha desabitada situada junto à costa de Porto
+                    Santo, destacando-se pela sua natureza preservada e águas cristalinas. É um local 
+                    popular para excursões de barco, pesca, mergulho e observação da fauna marinha, of
+                    erecendo um contacto direto com a paisagem natural da região. Com falésias vulcâni
+                    cas e formações rochosas únicas, o ilhéu proporciona vistas espetaculares da costa 
+                    da ilha principal e representa um ponto de interesse obrigatório para quem visita 
+                    Porto Santo em busca de aventura, tranquilidade e contacto com a natureza.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/ilheu do porto santo.jpeg" alt="Ilheu do Porto Santo" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like2" hidden>
+                            <label for="like2" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+
+        </section>
+        <!--Miradouro Pico da Ana Ferreira-->
+        <section>
+            <h3>Miradouto Pico da Ana Ferreira</h3>
+            <div class="horizontal">
+                <p>
+                   O Miradouro do Pico Ana Ferreira é um dos pontos panorâmicos mais conhecido
+                   s de Porto Santo, oferecendo vistas deslumbrantes sobre a vila, a extensa p
+                   raia dourada e o oceano Atlântico. Situado num ponto elevado, permite obser
+                   var as falésias e formações vulcânicas características da ilha, assim como 
+                   a tranquilidade da paisagem circundante. É um local ideal para caminhadas, 
+                   fotografia e contemplação da natureza, proporcionando aos visitantes uma ex
+                   periência única de paisagem e serenidade no coração de Porto Santo.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/miradouro ana ferreira.jpeg" alt="pico da ana ferreira" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like3" hidden>
+                            <label for="like3" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+
+        </section>
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404.html">Instagram</a>
+                <a href="10-erro/erro404.html">Facebook</a>
+                <a href="/10-erro/erro404.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Coisas para fazer - Porto Santo</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="/01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="/01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="/05-carrinho/lista_artigos.html"><img src="/imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="/06-favoritos/lista_fav.html"><img class="icon" src="/imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="/07-notificacoes/updates.html"><img class="icon" src="/imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="/08-reservas/atividades.html"><img class="icon" src="/imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/09-Login/index_apos_login.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="/index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--coisas para fazer no Porto Santo-->
+        <section>
+            <h2>Coisas para fazer no Porto Santo</h2>
+        </section>
+        <!--parapente-->
+        <section>
+            <h3>Jeep Safari Off Road
+            </h3>
+            <div class="horizontal">
+                <p>
+                   O turismo de 4x4 no Porto Santo é uma forma emocionante de explorar a ilha, permitindo 
+                   conhecer praias, dunas, falésias e trilhos rurais de difícil acesso a pé. Os passeios ofe
+                   recem vistas panorâmicas do oceano Atlântico e podem incluir explicações sobre a histó
+                   ria, geologia e flora local, combinando aventura, contacto com a natureza e descoberta d
+                   a ilha. É uma experiência ideal para quem deseja explorar Porto Santo de forma diferente,
+                    divertida e inesquecível.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/4X4 Porto Santo.jpeg" alt="parapente" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mais informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--festa canical-->
+        <section>
+            <h3>Mergulho</h3>
+            <div class="horizontal">
+                <p>
+                    O mergulho no Porto Santo permite explorar as águas cristalinas do Atlântico, com pontos 
+                    ideais para iniciantes e mergulhadores experientes. Os visitantes podem observar peixes 
+                    tropicais, recifes e formações rochosas submersas, combinando aventura, contacto com a 
+                    natureza e paisagens costeiras únicas. É uma atividade perfeita para quem procura emoção, 
+                    relaxamento e experiências inesquecíveis na ilha.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/mergulho porto santo.jpeg" alt="arraial sao vicente" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--vereda pico branco-->
+        <section>
+            <h3>Vereda do Pico Branco</h3>
+            <div class="horizontal">
+                <p>
+                    A Vereda do Pico Branco é um trilho pedestre popular no Porto Santo, oferecendo uma 
+                    caminhada de nível médio a difícil através de falésias, vales e flora endémica da ilha. 
+                    O percurso culmina no Pico Branco, o ponto mais alto da ilha, proporcionando vistas 
+                    panorâmicas sobre a vila, a praia dourada e o oceano Atlântico. É uma experiência ideal 
+                    para quem procura aventura, contacto com a natureza e paisagens inesquecíveis.
+                    
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/vereda do pico branco.jpeg" alt="caldeirao verder" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--praia porto santo-->
+        <section>
+            <h3>Relaxar na Praia</h3>
+            <div class="horizontal">
+                <p>
+                    A Praia de Porto Santo, com cerca de 9 km de extensão de areia dourada e águas cristalinas, 
+                    é a principal atração da ilha e uma das mais famosas do arquipélago da Madeira. Conhecida 
+                    pelas suas propriedades terapêuticas, a areia fina é recomendada para tratamentos de reuma
+                    tismo e relaxamento. A praia oferece condições ideais para banho, caminhadas à beira-mar, 
+                    desportos aquáticos e momentos de lazer em família, sendo rodeada por uma paisagem natural
+                     tranquila, com falésias e vistas panorâmicas sobre o oceano Atlântico, tornando-se um des
+                     tino imperdível para quem visita Porto Santo.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/praia do porto santo.jpeg" alt="praia do porto santo" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="/10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

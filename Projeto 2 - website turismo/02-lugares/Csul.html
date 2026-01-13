@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Lugares para ver - Costa Sul</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/ajuda.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="conteudo_direita">
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/index.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao para login-->
+                <div class="login">
+                    <a class="login_texto" href="/09-Login/login.html">Login</a>
+                    <img class="login_img" src="/imagens/icons8-accede-redondeado-derecho-50.png" alt="Imagem Login">
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--informaçao sobre costa sul-->
+        <section>
+            <h2>Costa Sul</h2>
+            <p>
+                A Costa Sul da Madeira é a região mais populosa, urbanizada e turística da ilha, destacando-se 
+                pelo seu clima ameno, ensolarado e relativamente seco, que contrasta com a humidade da costa norte. 
+                Este clima favorece o cultivo de produtos agrícolas como bananas, vinha, hortícolas e flores tropicais, 
+                tornando a região produtiva e visualmente muito verde.
+            </p>
+            <p>
+                Nesta zona situam-se as principais cidades e vilas da ilha, incluindo o Funchal, capital regional, 
+                bem como Ponta de Sol, Machico, Caniçal e Calheta. Estes locais combinam centros urbanos modernos 
+                com património histórico e cultural, como igrejas seculares, fortes, mercados tradicionais e 
+                museus, além de infraestruturas turísticas, incluindo hotéis, restaurantes, portos e marinas.
+            </p>
+            <p>
+                A costa sul é marcada por praias de calhau e areia dourada, enseadas e piscinas naturais, algumas 
+                de origem vulcânica, bem como por miradouros que oferecem vistas panorâmicas sobre o oceano 
+                Atlântico e as montanhas que descem em socalcos até à orla costeira. A região possui ainda levadas
+                e trilhos pedestres, permitindo caminhadas em contacto com a natureza e exploração da flora e 
+                fauna locais.
+            </p>
+            <p>
+                Historicamente, a costa sul foi um ponto central desde a chegada dos primeiros navegadores 
+                portugueses no século XV, mantendo viva a tradição marítima ligada à pesca, ao comércio e à 
+                navegação. Também é palco de importantes festividades culturais, como a Festa da Flor no 
+                Funchal, que celebram a história e as tradições madeirenses.
+            </p>
+            <p>
+                Por reunir natureza, história, cultura, agricultura e lazer, a costa sul é não só o principal 
+                centro económico e social da Madeira, mas também o ponto de partida ideal para conhecer toda 
+                a diversidade da ilha, oferecendo uma combinação única de praias, montanhas, jardins, miradouros 
+                e vida urbana.
+            </p>
+        </section>
+        <!--Ponta de Sol-->
+        <section>
+            <h3>Ponta de Sol</h3>
+            <div class="horizontal">
+                <p>
+                    Ponta do Sol, na costa sul da Madeira, é uma vila conhecida pelo seu clima ameno, ensolarado 
+                    e paisagens deslumbrantes, incluindo falésias, pequenas praias de calhau e zonas verdes. 
+                    Com um centro histórico pitoresco e arquitetura tradicional madeirense, a vila mantém 
+                    tradições agrícolas, especialmente no cultivo de banana, cana-de-açúcar e hortícolas. 
+                    Ponta do Sol é também ponto de partida para levadas e trilhos pedestres, oferecendo vistas p
+                    anorâmicas sobre o oceano Atlântico, sendo um destino ideal para quem procura natureza, hist
+                    ria e experiências autênticas na Madeira.
+                    
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/ponta de sol.jpeg" alt="ponta de sol" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+        </section>
+        <!--Machico-->
+        <section>
+            <h3>Machico</h3>
+            <div class="horizontal">
+                <p>
+                   Machico, localizada na costa sul da Madeira, é uma das vilas mais antigas da ilha e ficou 
+                   conhecida como o local de chegada dos primeiros navegadores portugueses no século XV. A região 
+                   combina praias de areia dourada, um porto natural e áreas agrícolas, onde se cultivam bananas, 
+                   hortícolas e vinha. Machico preserva património histórico, como a igreja de Nossa Senhora do Amparo,
+                    e oferece acesso a trilhos pedestres e levadas que percorrem a zona costeira e as encostas próximas. 
+                    Combinando história, cultura, praias e natureza, Machico é um destino ideal para quem procura expe
+                    riências autênticas e contato com a tradição madeirense.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/machico.jpeg" alt="machico" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Caniçal-->
+        <section>
+            <h3>Caniçal</h3>
+            <div class="horizontal">
+                <p>
+                   Caniçal, localizado na costa leste da Madeira, é uma vila tradicionalmente ligada à 
+                   pesca e à atividade portuária, destacando-se pelo seu porto de pesca e pelo desenvolvi
+                   mento industrial da região. A vila mantém um ambiente tranquilo, com casas típicas madeir
+                   enses e pequenas praias de calhau. Próximo do Caniçal encontra-se a Ponta de São Lo
+                   urenço, uma reserva natural de grande beleza, com trilhos pedestres que oferecem vis
+                   tas espetaculares sobre o oceano Atlântico e a paisagem árida da ponta da ilha. Combi
+                   nando tradição, natureza e contacto com o mar, Caniçal é um destino ideal para quem pro
+                   cura conhecer a cultura costeira e as paisagens únicas da Madeira.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/canical.jpeg" alt="caniçal" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like2" hidden>
+                            <label for="like2" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+
+        </section>
+        <!--Calheta-->
+        <section>
+            <h3>Calheta</h3>
+            <div class="horizontal">
+                <p>
+                   Calheta, situada na costa sul da Madeira, é uma vila conhecida pelas suas praias de 
+                   areia dourada, construídas com areia importada, e pelo seu clima ameno e ensolarado.
+                    A região combina agricultura tradicional, incluindo cultivo de cana-de-açúcar, bananas
+                    e vinho da Madeira, com infraestruturas turísticas modernas, como marina e hotéis.
+                    Calheta possui um património cultural interessante, incluindo a Igreja de São João 
+                    Baptista e museus locais, e oferece acesso a trilhos pedestres e levadas, permitindo
+                    explorar encostas verdes e vistas panorâmicas sobre o oceano Atlântico. Combinando
+                    natureza, lazer e tradição, Calheta é um destino popular para turistas que procuram 
+                    praias, caminhadas e experiências autênticas na Madeira.
+                </p>
+                <div class="card-horizontal">
+                    <img src="/imagens/calheta.jpeg" alt="calheta" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like3" hidden>
+                            <label for="like3" class="heart"></label>
+                        </div>
+                        <a class="btn" href="/10-erro/erro404.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="/10-erro/erro404.html">Sugestões</a>
+            </div>
+
+        </section>
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404.html">Instagram</a>
+                <a href="10-erro/erro404.html">Facebook</a>
+                <a href="/10-erro/erro404.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,578 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Inspiração - Gastronomia</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="/01-geral/ajuda.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="/02-lugares/principais.html">Principais Atrações</a></li>
+                            <li><a href="/02-lugares/Cnorte.html">Costa Norte</a></li>
+                            <li><a href="/02-lugares/Csul.html">Costa Sul</a></li>
+                            <li><a href="/02-lugares/PortoSanto.html">Porto Santo</a></li>
+                            <li><a href="/02-lugares/capital.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="/03-coisas/melhores.html">Melhores experiências</a></li>
+                            <li><a href="/03-coisas/CostaNorte.html">Costa Norte</a></li>
+                            <li><a href="/03-coisas/CostaSul.html">Costa Sul</a></li>
+                            <li><a href="/03-coisas/Porto_Santo_coisas.html">Porto Santo</a></li>
+                            <li><a href="/03-coisas/capital_coisas.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="/04-inspiracao/tendencias.html">Têndencias</a></li>
+                            <li><a href="/04-inspiracao/melhores_visitar.html">Melhores lugares para visitar</a></li>
+                            <li><a href="/04-inspiracao/urbana.html">Urbano</a></li>
+                            <li><a href="/04-inspiracao/rural.html">Rural</a></li>
+                            <li><a href="/04-inspiracao/guias.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="conteudo_direita">
+                <!--opcao inicio-->
+                <a class="hamburguer" href="/index.html"><img src="/imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao para login-->
+                <div class="login">
+                    <a class="login_texto" href="/09-Login/login.html">Login</a>
+                    <img class="login_img" src="/imagens/icons8-accede-redondeado-derecho-50.png" alt="Imagem Login">
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--titulo da pagina-->
+        <section>
+            <h2>Urbano</h2>
+        </section>
+        <!--tabs-->
+        <section class="section-tabs">
+            <div class="tabs">
+
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label for="tab1">Festas e Arraiais</label>
+
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2">Gastronomia</label>
+
+                <input type="radio" name="tabs" id="tab3">
+                <label for="tab3">Cultura</label>
+                <!--conteudo tab 1-->
+                <div class="painel painel1">
+                    <h4>Festas e Arraiais</h4>
+                    <section>
+                        <h3>Arraial do Monte</h3>
+                        <div class="horizontal">
+                            <p>
+                                O Arraial do Monte, perto do Funchal, é uma festa tradicional que celebra a cultura, a 
+                                religiosidade e as tradições madeirenses. Durante o evento, as ruas são decoradas com 
+                                flores e bandeirolas, e os visitantes podem assistir a procissões, música popular, danças 
+                                folclóricas e visitar bancas com produtos regionais. É uma oportunidade para conhecer a 
+                                identidade cultural da Madeira num ambiente animado e familiar, com convívio, diversão e a 
+                                beleza da serra do Funchal como cenário.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/arraial do monte.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like" hidden>
+                                        <label for="like" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Arraial São vicente-->
+                    <section>
+                        <h3>Arraial de São Vicente</h3>
+                        <div class="horizontal">
+                            <p>
+                                O Arraial de São Vicente, na costa norte da Madeira, é uma festa tradicional que celebr
+                                a a cultura, gastronomia e música local. Durante o evento, as ruas da vila são decorad
+                                as com cores e luzes, e os visitantes podem desfrutar de música ao vivo, dança folclór
+                                ica, jogos tradicionais e bancas com produtos regionais, como vinho, doces e artesanat
+                                o. É uma oportunidade para conhecer as tradições madeirenses e participar de atividade
+                                s culturais num ambiente animado e familiar.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/arraial sao vicente.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like2" hidden>
+                                        <label for="like2" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--festa canical-->
+                    <section>
+                        <h3>Festa da Nossa Senhora da Piedade - Caniçal</h3>
+                        <div class="horizontal">
+                            <p>
+                                A Festa de Nossa Senhora da Piedade, no Caniçal, é uma celebração religiosa e cultural 
+                                que homenageia a padroeira da vila. Durante o evento, as ruas são decoradas com flores e 
+                                bandeirolas, e os visitantes podem assistir a procissões, missas, música popular, danças 
+                                folclóricas e visitar bancas com produtos regionais, como peixe fresco, vinho, doces e 
+                                artesanato. É uma oportunidade para conhecer a cultura, as tradições e a vida costeira 
+                                do Caniçal num ambiente animado e familiar.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/festa caniçal.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like1" hidden>
+                                        <label for="like1" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--conteudo tab2-->
+                <div class="painel painel2">
+                    <h4>Gastronomia</h4>
+                    <!--restaurante o lagar-->
+                    <section>
+                        <h3>Restaurante o Lagar - Camara de Lobos</h3>
+                        <div class="horizontal">
+                            <p>
+                                O Restaurante O Lagar, em Câmara de Lobos, é conhecido pela sua cozinha tradicional 
+                                madeirense, com pratos de carne, peixe fresco e peixe-espada preto. Com um ambiente 
+                                acolhedor e familiar, oferece uma experiência gastronómica que combina sabores autênticos, 
+                                ingredientes locais de qualidade e a tradição culinária da Madeira, sendo um ponto de 
+                                referência para turistas e habitantes da ilha.
+                            
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/restaurante o lagar.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like3" hidden>
+                                        <label for="like3" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Restaurante tasquinha do pescador-->
+                    <section>
+                        <h3>Restaurante Tasquinha do Pescador - Caniçal</h3>
+                        <div class="horizontal">
+                            <p>
+                              A Tasquinha do Pescador, no Caniçal, é conhecida pela sua cozinha madeirense com peixe fresco e 
+                              marisco, incluindo pratos como espada, lapas e peixe grelhado. Com um ambiente simples e acolhedor,
+                               é um ponto de referência para quem procura sabores autênticos da ilha, combinando frescura, 
+                               radição e um atendimento simpático, numa experiência gastronómica próxima ao mar e à cultura 
+                               pesqueira da Madeira.  
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/tasquinha do pescador.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like4" hidden>
+                                        <label for="like4" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <!--restaurante grill house-->
+                    <section>
+                        <h3>Restaurante Carvão Grill House - Funchal</h3>
+                        <div class="horizontal">
+                            <p>
+                               O Restaurante O Carvão Grilo, na Madeira, é conhecido pela sua cozinha tradicional grelhada 
+                               no carvão, oferecendo pratos típicos como espetadas, carnes e peixes frescos. Com um ambiente 
+                               acolhedor e familiar, é um ponto de referência para quem quer degustar a verdadeira gastronomia 
+                               madeirense, combinando sabores autênticos, ingredientes locais de qualidade e um serviço 
+                               simpático. 
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/carvao grill house.jpeg" alt="arraial sao vicente" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like5" hidden>
+                                        <label for="lik5" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+                <div class="painel painel3">
+                    <h4>Cultura</h4>
+                    <!--se catedral funchal-->
+                    <section>
+                        <h3>Sé Catedral do Funchal</h3>
+                        <div class="horizontal">
+                            <p>
+                                A Sé Catedral do Funchal, dedicada a Nossa Senhora da Assunção, foi construída entre 1493 e 1514, durante o 
+                                reinado de D. Manuel I, sendo um dos mais notáveis exemplos da arquitetura manuelina em Portugal. 
+                                Edificada em cantaria de basalto, apresenta um exterior sóbrio que contrasta com a riqueza do seu 
+                                interior, onde se destaca o impressionante teto de madeira de cedro em estilo mudéjar, considerado um 
+                                dos mais belos do país. A catedral possui ainda valiosas obras de arte sacra dos séculos XV e XVI, 
+                                incluindo pinturas flamengas, refletindo a importância histórica, religiosa e cultural da Madeira no 
+                                período dos Descobrimentos.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/se_catedral.jpeg" alt="catedral se" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like6" hidden>
+                                        <label for="like6" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <!--mercado lavradores-->
+                    <section>
+                        <h3>Mercado dos Lavradores</h3>
+                        <div class="horizontal">
+                            <p>
+                            O Mercado dos Lavradores, situado no centro histórico do Funchal, é um dos espaços mais 
+                            emblemáticos da cidade. Inaugurado em 1940, destaca-se pela arquitetura tradicional e 
+                            pelos azulejos decorativos que retratam a vida e os costumes da Madeira. No mercado 
+                            encontram-se bancas de frutas tropicais, legumes, flores, especiarias e produtos regionais, 
+                            enquanto o piso inferior é dedicado à peixaria, com destaque para o peixe-espada-preto. 
+                            Além de ser um centro comercial, o Mercado dos Lavradores é um ponto turístico e cultural 
+                            importante, permitindo aos visitantes conhecerem os sabores, aromas e tradições da ilha. 
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/mercado-lavradores.jpeg" alt="mercado lavradores" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like8" hidden>
+                                        <label for="like8" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--garajau-->
+                    <section>
+                        <h3>Cristo Rei - Garajau</h3>
+                        <div class="horizontal">
+                            <p>
+                            O Cristo Rei do Garajau, na costa sul da Madeira, é uma imponente estátua de Cristo 
+                            inaugurada em 1927, com cerca de 14 metros de altura, simbolizando proteção para os 
+                            pescadores e habitantes locais. Situado sobre uma falésia, oferece vistas panorâmicas 
+                            deslumbrantes do oceano Atlântico e da costa, sendo também ponto de partida para atividades 
+                            como mergulho. É um local que combina património religioso, cultura e turismo, tornando-se 
+                            uma visita imperdível para conhecer a história e a beleza natural da ilha.
+                            </p>
+                            <div class="card-horizontal">
+                                <img src="/imagens/cristo garajau.jpeg" alt="parque tematico" class="imagem_card">
+                                <div>
+                                    <div class="card"> 
+                                        <input type="checkbox" id="like7" hidden>
+                                        <label for="like7" class="heart"></label>
+                                    </div>
+                                    <button class="pref btn" popovertarget="reserva">Reservar</button>
+                                    <!--popover reservar-->
+                                    <div id="reserva" popover="auto" class="popover_box">
+                                        <h2>Alerta!</h2><br><br>
+                                        <!--fazer Log in-->
+                                        <div>
+                                        <h3>Log In</h3>
+                                        <p>Para fazer reservas tem que fazer o seu Login</p><br><br>
+                                        </div>
+                                        <button class="pref fechar" popovertarget="reserva" popovertargetaction="hide">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+       
+                </div>
+            
+            </div>
+        </section>
+        <section>
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>1. Posso levar o meu cão em todos os passeios?</summary>
+                <p>Nem todos os passeios permitem cães. Verifique cada tour antes de reservar.</p>
+            </details>
+
+            <details>
+                <summary>2. O guia leva cães nos passeios?</summary>
+                <p>Sim, o guia pode levar os seus próprios cães, mas todos os animais são supervisionados e bem comportados para garantir a segurança de todos.</p>
+            </details>
+
+            <details>
+                <summary>3. Há limite de tamanho ou número de cães por passeio?</summary>
+                <p>Sim, para segurança e conforto, cada tour tem limites de cães e tamanho permitido.</p>
+            </details>
+
+            <details>
+                <summary>4. Preciso de vacinas ou certificados de saúde para o meu cão?</summary>
+                <p>Sim, todos os cães devem ter <strong>vacinas em dia</strong> e, preferencialmente, <strong>certificado de saúde atualizado</strong>.</p>
+            </details>
+
+            <details>
+                <summary>5. É necessário usar trela ou focinheira?</summary>
+                <p>Sim, trela é obrigatória; focinheira pode ser exigida em certas atividades ou raças.</p>
+            </details>
+
+            <details>
+                <summary>6. O meu cão será seguro durante o transporte?</summary>
+                <p>Sim, todos os veículos e equipamentos são adaptados para transporte seguro de cães.</p>
+            </details>
+
+            <details>
+                <summary>7. Existem taxas adicionais para levar cães?</summary>
+                <p>Alguns tours cobram um valor simbólico por animal de estimação.</p>
+            </details>
+
+            <details>
+                <summary>8. Posso reservar apenas para o meu cão e acompanhante?</summary>
+                <p>Sim, desde que haja disponibilidade. Informe a empresa no momento da reserva.</p>
+            </details>
+
+            <details>
+                <summary>9. E se o meu cão ficar ansioso durante o passeio?</summary>
+                <p>O guia adapta o ritmo do passeio e garante <strong>supervisão constante</strong>, inclusive com os seus próprios cães como exemplo de comportamento calmo.</p>
+            </details>
+
+            <details>
+                <summary>10. Meu cão pode interagir com outros cães do passeio?</summary>
+                <p>Sim, sempre de forma supervisionada para garantir segurança e conforto de todos os animais.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Comentários</h2>
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Maria</h4>
+                    <img src="/imagens/perfil1.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Adorei o passeio! Levar o meu cão foi super fácil, o guia foi muito atencioso e todos os 
+                        animais se deram bem. Recomendo a todos que querem viajar com os seus pets!” – Maria S.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>Ana</h4>
+                    <img src="/imagens/perfil2.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Muito profissional e acolhedor. O guia levou os seus próprios cães, que ajudaram a manter 
+                        os nossos calmos e confortáveis durante o passeio.” – Ana R.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>João</h4>
+                    <img src="/imagens/perfil3.jpeg" alt="catamaran" class="fund_img">
+                    <p>
+                        “Experiência incrível! O meu cão parecia estar tão feliz quanto eu. 
+                        Tudo organizado, seguro e com muita atenção aos animais.” – João P.
+                    </p>
+                </div>
+                
+            </div>
+           
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="/01-geral/ajuda.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="/10-erro/erro404.html">Instagram</a>
+                <a href="10-erro/erro404.html">Facebook</a>
+                <a href="/10-erro/erro404.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="/10-erro/erro404.html">Política de Privacidade</a>
+            <a href="/10-erro/erro404.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
