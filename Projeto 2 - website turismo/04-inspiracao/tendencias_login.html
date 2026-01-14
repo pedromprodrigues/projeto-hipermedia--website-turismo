@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Inspiração de viajem - Tendencias</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="../01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="../01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="../01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="../02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="../02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="../02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="../02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="../02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="../03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="../03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="../03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="../03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="../03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="./04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="./04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="./04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="./04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="./04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="../05-carrinho/lista_artigos.html"><img src="../imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="../06-favoritos/lista_fav.html"><img class="icon" src="../imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="../07-notificacoes/updates.html"><img class="icon" src="../imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="../08-reservas/atividades.html"><img class="icon" src="../imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="../09-Login/index_apos_login.html"><img src="../imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--introdução a pagina-->
+        <section>
+            <h2>Tendências</h2>
+            <p>
+                No nosso site, as reservas mais populares incluem passeios pelas levadas e trilhos da Madeira, visitas a miradouros e 
+                jardins botânicos, tours de 4x4, zip-line e parapente, e experiências pet friendly. As zonas mais procuradas são o 
+                Funchal, a Costa Sul, Porto Moniz e Porto Santo. Estas tendências mostram que os nossos clientes valorizam atividades 
+                autênticas, contato com a natureza e experiências únicas, ajudando-nos a criar serviços cada vez mais ajustados às 
+                suas preferências.
+            </p>
+        </section>
+        <!--cartoes com visitas mais reservadas-->
+        <section>
+            <div class="conj_cards">
+                <div class="card">
+                    <h3>Amanhecer no pico Ruivo</h3>
+                    <img src="../imagens/pico-ruivo-amanhecer.jpeg" alt="" class="imagem_card">
+                    <p>
+                        Desperte com o sol a iluminar as nuvens e o vale abaixo, 
+                        num espetáculo único que só o Pico Ruivo, o ponto mais alto da Madeira, pode oferecer.
+                    </p>
+                    <div class="card"> 
+                    <input type="checkbox" id="like" hidden>
+                    <label for="like" class="heart"></label>
+                    </div>
+                    <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                </div>
+                <div class="card">
+                    <h3>Seixal</h3>
+                    <img src="../imagens/seixal-cidade.jpeg" alt="" class="imagem_card">
+                    <p>
+                        Encante-se com as falésias verdes, as praias de areia negra e a 
+                        tranquilidade única que o Seixal oferece na costa norte da Madeira.
+                    </p>
+                    <div class="card"> 
+                    <input type="checkbox" id="like1" hidden>
+                    <label for="like1" class="heart"></label>
+                    </div>
+                    <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                </div>
+                <div class="card">
+                    <h3>Jardim Botanico</h3>
+                    <img src="../imagens/jardim-botanico.jpeg" alt="" class="imagem_card">
+                    <p>
+                        Passeie entre plantas exóticas, flores vibrantes e vistas 
+                        panorâmicas sobre o Funchal no encantador Jardim Botânico da Madeira.
+                    </p>
+                    <div class="card"> 
+                    <input type="checkbox" id="like2" hidden>
+                    <label for="like2" class="heart"></label>
+                    </div>
+                    <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>1. Posso levar o meu cão em todos os passeios?</summary>
+                <p>Nem todos os passeios permitem cães. Verifique cada tour antes de reservar.</p>
+            </details>
+
+            <details>
+                <summary>2. O guia leva cães nos passeios?</summary>
+                <p>Sim, o guia pode levar os seus próprios cães, mas todos os animais são supervisionados e bem comportados para garantir a segurança de todos.</p>
+            </details>
+
+            <details>
+                <summary>3. Há limite de tamanho ou número de cães por passeio?</summary>
+                <p>Sim, para segurança e conforto, cada tour tem limites de cães e tamanho permitido.</p>
+            </details>
+
+            <details>
+                <summary>4. Preciso de vacinas ou certificados de saúde para o meu cão?</summary>
+                <p>Sim, todos os cães devem ter <strong>vacinas em dia</strong> e, preferencialmente, <strong>certificado de saúde atualizado</strong>.</p>
+            </details>
+
+            <details>
+                <summary>5. É necessário usar trela ou focinheira?</summary>
+                <p>Sim, trela é obrigatória; focinheira pode ser exigida em certas atividades ou raças.</p>
+            </details>
+
+            <details>
+                <summary>6. O meu cão será seguro durante o transporte?</summary>
+                <p>Sim, todos os veículos e equipamentos são adaptados para transporte seguro de cães.</p>
+            </details>
+
+            <details>
+                <summary>7. Existem taxas adicionais para levar cães?</summary>
+                <p>Alguns tours cobram um valor simbólico por animal de estimação.</p>
+            </details>
+
+            <details>
+                <summary>8. Posso reservar apenas para o meu cão e acompanhante?</summary>
+                <p>Sim, desde que haja disponibilidade. Informe a empresa no momento da reserva.</p>
+            </details>
+
+            <details>
+                <summary>9. E se o meu cão ficar ansioso durante o passeio?</summary>
+                <p>O guia adapta o ritmo do passeio e garante <strong>supervisão constante</strong>, inclusive com os seus próprios cães como exemplo de comportamento calmo.</p>
+            </details>
+
+            <details>
+                <summary>10. Meu cão pode interagir com outros cães do passeio?</summary>
+                <p>Sim, sempre de forma supervisionada para garantir segurança e conforto de todos os animais.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Comentários</h2>
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Maria</h4>
+                    <img src="../imagens/perfil1.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Adorei o passeio! Levar o meu cão foi super fácil, o guia foi muito atencioso e todos os 
+                        animais se deram bem. Recomendo a todos que querem viajar com os seus pets!” – Maria S.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>Ana</h4>
+                    <img src="../imagens/perfil2.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Muito profissional e acolhedor. O guia levou os seus próprios cães, que ajudaram a manter 
+                        os nossos calmos e confortáveis durante o passeio.” – Ana R.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>João</h4>
+                    <img src="../imagens/perfil3.jpeg" alt="catamaran" class="fund_img">
+                    <p>
+                        “Experiência incrível! O meu cão parecia estar tão feliz quanto eu. 
+                        Tudo organizado, seguro e com muita atenção aos animais.” – João P.
+                    </p>
+                </div>
+                
+            </div>
+           
+        </section>
+        
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="../01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="../10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="../10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="../10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="../10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

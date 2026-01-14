@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Login</title>
+</head>
+<body class="body-login">
+    <!-- Div para colocar a form de login centrada na pagina--> 
+      
+    <div class="login_login">
+        <img src="../imagens/Logo da Explore Madeira com paisagem.png" alt="logo empresa" class="header_logo">
+        <!-- Utilizo a form porque deixa usar action e quando carregamos no butao entra na pagina principal-->
+        <form action="./index_apos_login.html">
+            <label class="login_text" for="name">Name: </label><br>
+            <input id="name" name="name" type="text"/><br>
+            <label class="login_text" for="password">Password </label><br>
+            <input id="password" name="password" type="password" required /> <span></span>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Ajuda</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="./01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="./01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="./01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="../02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="../02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="../02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="../02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="../02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="../03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="../03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="../03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="../03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="../03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="../04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="../04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="../04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="../04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="../04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="../05-carrinho/lista_artigos.html"><img src="../imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="../06-favoritos/lista_fav.html"><img class="icon" src="../imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="../07-notificacoes/updates.html"><img class="icon" src="../imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="../08-reservas/atividades.html"><img class="icon" src="../imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="../09-Login/index_apos_login.html"><img src="../imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <section class="pagina-priv">
+            <h1>Política de Privacidade</h1>
+            <p>Escolha quais informações quer autorizar para uso. Clique em cada opção para ver mais detalhes.</p>
+
+            <!-- Dados Pessoais -->
+            <details>
+                <summary>
+                <span>Autorização de Dados Pessoais</span>
+                <label class="switch2">
+                    <input type="checkbox" checked>
+                    <span class="slider2"></span>
+                </label>
+                </summary>
+                <p>
+                Permitimos o uso de seus dados pessoais apenas para fins de reserva de passeios, contacto direto com os 
+                clientes e personalização da experiência. Os dados são armazenados de forma segura e nunca serão 
+                compartilhados com terceiros sem a sua autorização explícita. Pode revogar esta autorização a qualquer 
+                momento, entrando em contacto connosco.
+                </p>
+            </details>
+
+            <!-- Email -->
+            <details>
+                <summary>
+                <span>Receber emails</span>
+                <label class="switch2">
+                    <input type="checkbox" checked>
+                    <span class="slider2"></span>
+                </label>
+                </summary>
+                <p>
+                Ao aceitar esta opção, concorda em receber informações, novidades e promoções via email sobre os nossos 
+                passeios e eventos.O envio de emails será feito de forma responsável e você poderá cancelar a inscrição 
+                a qualquer momento através de um link presente em todos os emails.
+                </p>
+            </details>
+
+            <!-- Lista de Alunos -->
+            <details>
+                <summary>
+                <span>Lista de Alunos</span>
+                <label class="switch2">
+                    <input type="checkbox">
+                    <span class="slider2"></span>
+                </label>
+                </summary>
+                <p>
+                Autorizo que meu nome e dados de contacto sejam incluídos em listas internas de participantes ou 
+                alunos para registro de atividades, certificados ou comunicação interna. Esta informação será usada apenas para fins administrativos e não será compartilhada publicamente.
+                </p>
+            </details>
+        </section>
+
+             
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="../04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="../03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="./01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="../10-erro/erro404_login.html">Instagram</a>
+                <a href="..10-erro/erro404_login.html">Facebook</a>
+                <a href="../10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="../10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="../10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+</body>
+</html>

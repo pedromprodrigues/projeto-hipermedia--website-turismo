@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Coisas para fazer - Costa Sul</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="../01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="../01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="../01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="../02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="../02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="../02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="../02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="../02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="./03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="./03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="./03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="./03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="./03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="../04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="../04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="../04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="../04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="../04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="../05-carrinho/lista_artigos.html"><img src="../imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="../06-favoritos/lista_fav.html"><img class="icon" src="../imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="../07-notificacoes/updates.html"><img class="icon" src="../imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="../08-reservas/atividades.html"><img class="icon" src="../imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="../09-Login/index_apos_login.html"><img src="../imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--coisas para fazer costa Sul-->
+        <section>
+            <h2>Coisas para fazer na Costa Sul</h2>
+        </section>
+        <!--parapente-->
+        <section>
+            <h3>Parapente - Calheta</h3>
+            <div class="horizontal">
+                <p>
+                   O parapente na Ilha da Madeira é uma atividade de aventura que permite sobrevoar montanhas, 
+                   falésias, vales e o oceano Atlântico, oferecendo vistas panorâmicas únicas da ilha. Pode ser 
+                   praticado em tandem com instrutor ou por praticantes experientes, combinando adrenalina e 
+                   ontacto com a natureza. É uma experiência inesquecível para quem procura emoção, liberdade 
+                   e uma forma diferente de explorar a beleza natural da Madeira.
+                </p>
+                <div class="card-horizontal">
+                    <img src="../imagens/parapente.jpeg" alt="parapente" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                        </div>
+                        <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mais informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="../10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--festa canical-->
+        <section>
+            <h3>Festa da Nossa Senhora da Piedade - Caniçal</h3>
+            <div class="horizontal">
+                <p>
+                    A Festa de Nossa Senhora da Piedade, no Caniçal, é uma celebração religiosa e cultural 
+                    que homenageia a padroeira da vila. Durante o evento, as ruas são decoradas com flores e 
+                    bandeirolas, e os visitantes podem assistir a procissões, missas, música popular, danças 
+                    folclóricas e visitar bancas com produtos regionais, como peixe fresco, vinho, doces e 
+                    artesanato. É uma oportunidade para conhecer a cultura, as tradições e a vida costeira 
+                    do Caniçal num ambiente animado e familiar.
+                </p>
+                <div class="card-horizontal">
+                    <img src="../imagens/festa caniçal.jpeg" alt="arraial sao vicente" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="../10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--levada tornos-->
+        <section>
+            <h3>Levada dos Tornos</h3>
+            <div class="horizontal">
+                <p>
+                    A Levada dos Tornos, perto do Funchal, é um percurso pedestre tradicional da Madeira que a
+                    travessa encostas verdes, terrenos agrícolas e bosques, oferecendo vistas panorâmicas sob
+                    re a cidade, o vale dos Tornos e o oceano Atlântico. Originalmente construída para irrigação
+                     agrícola, a levada permite aos visitantes explorar a natureza, a flora típica da ilha e 
+                     a história das levadas, sendo um passeio ideal para quem procura trabalho leve, tranquilidade
+                      e contacto com a paisagem madeirense.
+                    
+                </p>
+                <div class="card-horizontal">
+                    <img src="../imagens/levada tornos.jpeg" alt="caldeirao verder" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                        </div>
+                        <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="../10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        <!--garajau-->
+        <section>
+            <h3>Cristo Rei - Garajau</h3>
+            <div class="horizontal">
+                <p>
+                   O Cristo Rei do Garajau, na costa sul da Madeira, é uma imponente estátua de Cristo 
+                   inaugurada em 1927, com cerca de 14 metros de altura, simbolizando proteção para os 
+                   pescadores e habitantes locais. Situado sobre uma falésia, oferece vistas panorâmicas 
+                   deslumbrantes do oceano Atlântico e da costa, sendo também ponto de partida para atividades 
+                   como mergulho. É um local que combina património religioso, cultura e turismo, tornando-se 
+                   uma visita imperdível para conhecer a história e a beleza natural da ilha.
+                </p>
+                <div class="card-horizontal">
+                    <img src="../imagens/cristo garajau.jpeg" alt="parque tematico" class="imagem_card">
+                    <div>
+                        <div class="card"> 
+                            <input type="checkbox" id="like2" hidden>
+                            <label for="like2" class="heart"></label>
+                        </div>
+                        <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <button class="pref btn" popovertarget="mais-informacoes">Mais Informações</button>
+                <!--popover mains informacoes-->
+                <div id="mais-informacoes" popover="auto" class="popover_box">
+                    <h2>Mais Informações</h2><br><br>
+                    <!--itenerário-->
+                    <div>
+                        <h3>Intenerário</h3>
+                        <p>Pick-up no hotél - local de atividade - Drop-Off no hotél</p><br><br>
+                    </div>
+                    <!--duração-->
+                    <div>
+                        <h3>Duração</h3>
+                        <p>6h</p><br><br>
+                    </div>
+                    <!--companhia-->
+                    <div>
+                        <h3>Companhia</h3>
+                        <p>Os patudos podem se juntar a esta atividade</p> <br><br>
+                    </div>
+                    <button class="pref fechar" popovertarget="mais-informacoes" popovertargetaction="hide">Fechar</button>
+                </div>
+                <a class="btn" href="../10-erro/erro404_login.html">Sugestões</a>
+            </div>
+        </section>
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="../01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="../10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="../10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="../10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="../10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

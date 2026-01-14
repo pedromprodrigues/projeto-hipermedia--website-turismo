@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Projeto 2</title>
+</head>
+<body>
+    <header class="header">
+        <!--menu sidebar-->
+        <nav class="sidebar">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="./01-geral/ajuda.html">Ajuda</a></li>
+                            </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="./02-lugares/principais.html">Principais Atrações</a></li>
+                            <li><a href="./02-lugares/Cnorte.html">Costa Norte</a></li>
+                            <li><a href="./02-lugares/Csul.html">Costa Sul</a></li>
+                            <li><a href="./02-lugares/PortoSanto.html">Porto Santo</a></li>
+                            <li><a href="./02-lugares/capital.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="./03-coisas/melhores.html">Melhores experiências</a></li>
+                            <li><a href="./03-coisas/CostaNorte.html">Costa Norte</a></li>
+                            <li><a href="./03-coisas/CostaSul.html">Costa Sul</a></li>
+                            <li><a href="./03-coisas/Porto_Santo_coisas.html">Porto Santo</a></li>
+                            <li><a href="./03-coisas/capital_coisas.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="./04-inspiracao/tendencias.html">Têndencias</a></li>
+                            <li><a href="./04-inspiracao/melhores_visitar.html">Melhores lugares para visitar</a></li>
+                            <li><a href="./04-inspiracao/urbana.html">Urbano</a></li>
+                            <li><a href="./04-inspiracao/rural.html">Rural</a></li>
+                            <li><a href="./04-inspiracao/guias.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--opcao para login-->
+            <div class="login">
+                <a class="login_texto" href="./09-Login/login.html">Login</a>
+                <img class="login_img" src="./imagens/icons8-accede-redondeado-derecho-50.png" alt="Imagem Login">
+            </div>
+        </nav>
+        <!--informacao e logo da impresa-->
+        <div class="empresa">
+            <img src="imagens/Logo da Explore Madeira com paisagem.png" alt="Explore Madeira logo" class="header_logo">
+            <h1 class="header_h1">Experiências autênticas na Madeira</h1>
+            <div class="butoes">
+                <a class="btn n1" href="./02-lugares/principais.html">Lugares</a>
+                <a class="btn n1" href="./03-coisas/melhores.html">Actividades</a>
+            </div>
+        </div>
+        <!--informacao dos fundadores-->
+        <div class="fundadores">
+            <h3>Fundadores</h3>
+            <div class="fundador">   
+                <img src="./imagens/E48EC4A5-03AB-4D9B-80A8-86DBCD086F08_1_105_c.jpeg" alt="Fundador 1" class="fund_img">
+                <h4 class="fund_name">Pedro Rodrigues</h4>
+            </div>
+            <div class="fundador">
+                <img src="./imagens/8F405DF6-A3DA-4A7A-8AAF-9FB6C2EF81D0_1_105_c.jpeg" alt="Fundador 2" class="fund_img">
+                <h4 class="fund_name">Cookie</h4>
+            </div>
+            <div class="fundador">
+                <img src="./imagens/WhatsApp Image 2026-01-09 at 13.19.05.jpeg" alt="Fundador 3" class="fund_img">
+                <h4 class="fund_name">Koffee</h4>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!--secção sobre nós-->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>
+                Somos uma pequena empresa local da Madeira, criada a partir do amor pela ilha, 
+                pela natureza e pelos nossos cães. Aqui não há grandes equipas nem turismo em massa — 
+                somos apenas eu e os meus companheiros de quatro patas, a partilhar experiências autênticas 
+                com quem nos visita. 
+            </p>
+            <p>
+                Os nossos passeios são pensados para quem quer conhecer a Madeira de forma tranquila, 
+                verdadeira e próxima da natureza. Caminhamos por trilhos, paisagens e recantos especiais 
+                da ilha, sempre com tempo para apreciar, sentir e viver o momento — ao ritmo das patas e dos passos.
+            </p>
+            <p>
+                Os cães fazem parte da experiência. São calmos, bem cuidados e habituados a acompanhar 
+                pessoas, trazendo leveza, alegria e uma ligação especial ao caminho. Para muitos visitantes, 
+                tornam-se rapidamente parte da família durante o passeio.
+            </p>
+            <p>
+                Acreditamos num turismo responsável, local e respeitador do ambiente. Cada passeio é único, 
+                adaptado a quem nos acompanha, e feito com carinho, segurança e atenção aos detalhes.
+            </p>
+            <p>
+                Mais do que um passeio, oferecemos uma experiência simples, genuína e memorável — 
+                Madeira, natureza e companhia verdadeira.
+            </p>
+
+        </section>
+        <!--secçao missao-->
+        <section>
+            <h2>Missão</h2>
+            <p>
+                A nossa missão é proporcionar experiências únicas e genuínas na Madeira, combinando a beleza 
+                natural da ilha com a companhia dos nossos cães. Queremos que cada passeio seja mais do que 
+                um simples tour: que seja um momento de conexão com a natureza, com os animais e com a cultura local.
+            </p>
+            <p>
+                Valorizamos o turismo responsável e personalizado, onde cada visitante é acompanhado com atenção, 
+                cuidado e carinho. Acreditamos que pequenas experiências, feitas com paixão e dedicação, criam 
+                memórias duradouras e fortalecem o amor pela Madeira e pelos seus recantos escondidos.
+            </p>
+            <p>
+                Nosso objetivo é simples: mostrar a ilha de uma forma autêntica, divertida e inesquecível, 
+                sempre na companhia dos nossos fiéis companheiros de quatro patas.
+            </p>
+        </section>
+        <!--seccao lugares preferidos-->
+        <section>
+            <h2>Os nossos lugares preferidos</h2>
+            <p>
+                Na nossa pequena aventura pela Madeira, fomos descobrindo cantinhos que nos encantam e que 
+                adoramos partilhar com quem nos acompanha. Cada trilho, cada miradouro e cada recanto tem uma 
+                história, uma paisagem ou um cheiro especial que nos faz sentir em casa.
+            </p>
+            <p>
+                Desde levadas escondidas rodeadas de vegetação verdejante até pequenas praias e falésias com vistas 
+                de cortar a respiração, cada lugar escolhido reflete o que mais amamos na ilha: natureza, tranquilidade 
+                e autenticidade.
+            </p>
+            <p>
+                Os nossos cães também têm os seus favoritos: sítios onde podem correr livremente, explorar novas 
+                trilhas e sentir a brisa do mar. A companhia deles torna cada passeio ainda mais especial e inesquecível.
+            </p>
+            <p>
+                Queremos que os nossos visitantes conheçam a Madeira de forma genuína, sentindo a magia destes lugares que para 
+                nós são verdadeiros tesouros, e que levem consigo memórias que vão durar muito mais do que uma simples viagem.
+            </p>
+            <!--cartoes de lugares-->
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Favorito do Pedro</h4>
+                    <h5>Pico Ruivo</h5>
+                    <img src="./imagens/8026373_orig.jpg" alt="pico ruivo" class="imagem_card">
+                    <p>Aventura até o ponto mais alto da Madeira, com vistas de cortar a respiração.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Cookie</h4>
+                    <h5>Chão das Aboboreiras</h5>
+                    <img src="./imagens/chao-aboboreiras.jpeg" alt="Chão das Aboboreiras" class="imagem_card">
+                    <p>Um recanto mágico da Madeira, rodeado de vegetação e tranquilidade, perfeito para relaxar e explorar.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Koffee</h4>
+                    <h5>Sete Lagoas</h5>
+                    <img src="./imagens/sete-lagoas.jpeg" alt="Sete Lagoas" class="imagem_card">
+                    <p>Um conjunto de lagoas serenas no Paul da Serra, perfeito para trilhos e fotos inesquecíveis.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+
+            </div>
+
+        </section>
+        <!--seccao coisas que mais gostamos-->
+        <section>
+            <h2>Coisas que mais gostamos de fazer</h2>
+            <p>
+                Adoramos explorar cada recanto da Madeira, sentir a brisa do mar, percorrer trilhos 
+                escondidos e descobrir paisagens que nos deixam sem fôlego. Nada nos deixa mais felizes 
+                do que passar tempo na natureza, com os nossos cães a correrem livremente ao nosso lado, 
+                cheirando cada trilha e fazendo novos amigos pelo caminho.
+            </p>
+            <p>
+                Gostamos de momentos simples: caminhar por levadas verdejantes, descansar junto a uma lagoa 
+                tranquila, admirar o pôr do sol em miradouros secretos e partilhar sorrisos com quem nos acompanha. 
+                Cada experiência é feita com paixão, curiosidade e respeito pelo ambiente, transformando cada passeio 
+                numa memória inesquecível.
+            </p>
+        </section>
+        <!--experiencias favoritas-->
+        <section>
+            <h2>As nossas experiencias favoritas</h2>
+            <!--cartoes de lugares-->
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Favorito do Pedro</h4>
+                    <h5>Amanhecer no Pico Ruivo</h5>
+                    <img src="./imagens/pico-ruivo-amanhecer.jpeg" alt="pico ruivo" class="imagem_card">
+                    <p>Desperta com a Madeira aos teus pés e o nascer do sol a iluminar montanhas e vales.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Cookie</h4>
+                    <h5>Fanal com Nevoeiro</h5>
+                    <img src="./imagens/fanal-nevoeiro.jpeg" alt="fanal" class="imagem_card">
+                    <p>Mergulha na magia da Laurissilva, onde o nevoeiro transforma o Fanal num cenário encantado.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Koffee</h4>
+                    <h5>Catamaran</h5>
+                    <img src="./imagens/catamaran.jpeg" alt="catamaran" class="imagem_card">
+                    <p>Navega pelas águas cristalinas da Madeira e descobre a costa com aventura e tranquilidade a bordo de um catamaran.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+
+            </div>
+
+        </section>
+        <!--seccao atraçoes preferidas-->
+        <section>
+            <h2>Atrações Preferidas</h2>
+            <p>
+                A Madeira não é só natureza — também adoramos explorar a sua história e cultura. 
+                Caminhar pelas ruas coloridas do Funchal, descobrir monumentos antigos, visitar igrejas e 
+                centros históricos, ou perder-nos nos mercados e praças, é uma forma de sentir a alma da ilha.
+            </p>
+            <p>
+                Cada cidade, vila ou monumento revela histórias únicas e tradições que nos encantam. 
+                Para nós, estas experiências são tão especiais quanto os trilhos e as paisagens: 
+                combinam cultura, arquitetura e momentos inesquecíveis que vale a pena partilhar.
+            </p>
+            <!--cartoes de lugares-->
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Favorito do Pedro</h4>
+                    <h5>Capela da Nossa Senhora da Piedade</h5>
+                    <img src="./imagens/capela-canical.jpeg" alt="capela" class="imagem_card">
+                    <p>Uma pequena joia histórica da Madeira, cheia de charme e mistério na ponta da ilha.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Cookie</h4>
+                    <h5>Miradouro Bica da Cana</h5>
+                    <img src="./imagens/miradouro-bica-cana.jpeg" alt="bica da cana" class="imagem_card">
+                    <p>Um miradouro tranquilo nas alturas da Madeira, com vistas amplas sobre montanhas e vales.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+                <div class="card">
+                    <h4>Favorito da Koffee</h4>
+                    <h5>Praia do Seixal</h5>
+                    <img src="./imagens/praia-seixal.jpeg" alt="seixal" class="imagem_card">
+                    <p>Uma praia de areia negra rodeada por falésias verdes e mar cristalino, um dos cenários mais bonitos da Madeira.</p>
+                    <a class="btn" href="./10-erro/erro404.html">Mais Informação</a>
+                </div>
+
+            </div>
+
+        </section>
+        <!--seccao destaques-->
+        <section>
+            <h2>Destaques</h2>
+            <div class="conj_cards">
+                <img src="./imagens/Zip-line.jpeg" alt="zip line" class="imagem_card">
+                <div>
+                    <p>
+                       A Madeira ganha uma nova experiência cheia de adrenalina com a chegada da zip line, 
+                       uma atração que combina aventura, natureza e vistas deslumbrantes. Suspenso sobre 
+                       paisagens únicas da ilha, este percurso oferece uma perspetiva diferente e emocionante, 
+                       permitindo sentir a liberdade e a velocidade enquanto se desliza entre montanhas e vales. 
+                    </p>
+                    <p>
+                        Pensada para quem procura algo fora do comum, a zip line é uma excelente forma de explorar 
+                        a Madeira de uma maneira divertida e inesquecível. Seja para os mais aventureiros ou para 
+                        quem quer experimentar algo novo, esta é uma experiência que promete marcar a visita à 
+                        ilha e criar memórias cheias de emoção.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li></li><a href="./04-inspiracao/rural.html">Tours</a></li>
+                <li><a href="./03-coisas/melhores.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="./01-geral/ajuda.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="./10-erro/erro404.html">Instagram</a>
+                <a href="./10-erro/erro404.html">Facebook</a>
+                <a href="./10-erro/erro404.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="./10-erro/erro404.html">Política de Privacidade</a>
+            <a href="./10-erro/erro404.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

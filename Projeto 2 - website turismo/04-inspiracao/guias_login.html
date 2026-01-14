@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Inspiração de viajem -Guia de viajem na Capital</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="../01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="../01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="../01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="../02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="../02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="../02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="../02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="../02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="../03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="../03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="../03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="../03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="../03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="./04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="./04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="./04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="./04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="./04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="../05-carrinho/lista_artigos.html"><img src="../imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="../06-favoritos/lista_fav.html"><img class="icon" src="../imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="../07-notificacoes/updates.html"><img class="icon" src="../imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="../08-reservas/atividades.html"><img class="icon" src="../imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="../09-Login/index_apos_login.html"><img src="../imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+           <!--titulo da pagina-->
+        <section>
+            <h2>Guias de Viajem</h2>
+        </section>
+        <!--tabs-->
+        <section class="section-tabs">
+            <div class="tabs1">
+
+                <input type="radio" name="tabs1" id="tab1" checked>
+                <label for="tab1">Capital</label>
+
+                <input type="radio" name="tabs1" id="tab2">
+                <label for="tab2">Costa Norte</label>
+
+                <input type="radio" name="tabs1" id="tab3">
+                <label for="tab3">Costa Sul</label>
+
+                <input type="radio" name="tabs1" id="tab4">
+                <label for="tab4">Porto Santo</label>
+
+                <!--conteudo tab 1-->
+                <div class="painel painel1">
+                    <h4>Capital</h4>
+                    <section>
+                        <div class="horizontal-esquerda"> 
+                            <input type="checkbox" id="like" hidden>
+                            <label for="like" class="heart"></label>
+                            <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                        </div>
+                        <h3>Manhã:</h3>
+                        <p>
+                            - Comece pelo Mercado dos Lavradores, para explorar frutas tropicais, 
+                            flores e produtos locais.
+                        </p>
+                        <p>
+                            - Siga para o Centro Histórico, passeando pelas ruas estreitas da Zona Velha, 
+                            admirando os murais das portas pintadas e pequenas lojas de artesanato.
+                        </p>
+                        <h3>Almoço:</h3>
+                        <p>
+                            - Experimente um restaurante tradicional madeirense no centro da cidade, 
+                            com pratos como espada preta com banana ou espetadas.
+                        </p>
+                        <h3>Tarde:</h3>
+                        <p>
+                            - Suba até ao Jardim Botânico, para apreciar plantas endémicas e vistas panorâmicas 
+                            sobre a baía do Funchal.
+                        </p>
+                        <p>
+                            - Depois, vá ao Teleférico do Funchal, que leva ao Monte, aproveitando as vistas 
+                            incríveis da cidade e do oceano.
+                        </p>
+                        <p>
+                            - No Monte, visite a Igreja de Nossa Senhora do Monte e, se quiser aventura, 
+                            experimente o tradicional Carro de Cesto descendo até à cidade.
+                        </p>
+                        <h3>Fim de tarde:</h3>
+                        <p>
+                            - Passe pelo Parque Ecológico do Funchal ou relaxe na Avenida do Mar, 
+                            aproveitando a brisa do Atlântico e o pôr do sol.
+                        </p>
+                        <h3>Opcional:</h3>
+                        <p>
+                            - Termine com uma degustação de poncha ou vinho da Madeira em algum bar 
+                            típico da cidade.
+                        </p>
+
+                        <img src="../imagens/rota funchal.png" alt="rota funchal" class="imagem_rota">
+                    </section>
+                </div>
+                <!--conteudo tab2-->
+                <div class="painel painel2">
+                    <h4>Costa Norte</h4>
+                    <section>
+                        <div class="horizontal-esquerda"> 
+                            <input type="checkbox" id="like1" hidden>
+                            <label for="like1" class="heart"></label>
+                            <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                        </div>
+                        <h3>Manhã:</h3>
+                        <p>
+                            - Comece em São Vicente, visitando as grutas vulcânicas e o 
+                            centro de vulcanismo, aprendendo sobre a origem geológica da ilha.
+                        </p>
+                        <p>
+                            - Siga para a Ribeira da Janela, apreciando as formações rochosas e a 
+                            vista panorâmica sobre o oceano Atlântico.
+                        </p>
+                        <h3>Almoço:</h3>
+                        <p>
+                            - Almoce em um restaurante local em São Vicente ou Porto Moniz, experimentando 
+                            pratos típicos como peixe fresco grelhado ou espada preta com banana.
+                        </p>
+                        <h3>Tarde:</h3>
+                        <p>
+                            - Visite Porto Moniz, famoso pelas piscinas naturais de lava, 
+                            ideais para um mergulho seguro e relaxante.
+                        </p>
+                        <p>
+                            - Passeie pela costa até à Ponta do Tristão ou Seixal, 
+                            desfrutando de miradouros e paisagens verdejantes e dramáticas.
+                        </p>
+                        <p>
+                            - No Monte, visite a Igreja de Nossa Senhora do Monte e, se quiser aventura, 
+                            experimente o tradicional Carro de Cesto descendo até à cidade.
+                        </p>
+                        <h3>Fim de tarde:</h3>
+                        <p>
+                            - Termine o dia no Miradouro da Ponta do Sossego ou Miradouro da Ponta da Ribeira, para 
+                            contemplar o pôr do sol sobre a costa norte e tirar fotografias memoráveis.
+                        </p>
+                        <h3>Opcional:</h3>
+                        <p>
+                            - Se houver tempo, explore pequenas aldeias costeiras e 
+                            prove doces regionais ou bolo de mel, típicos da Madeira.
+                        </p>
+
+                        <img src="../imagens/rota costa norte.png" alt="rota funchal" class="imagem_rota">
+                    </section>
+                    
+                </div>
+                <div class="painel painel3">
+                    <h4>Costa Sul</h4>
+                    <section>
+                        <div class="horizontal-esquerda"> 
+                            <input type="checkbox" id="like2" hidden>
+                            <label for="like2" class="heart"></label>
+                            <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                        </div>
+                        <h3>Manhã:</h3>
+                        <p>
+                            - Comece no Funchal, visitando o Mercado dos Lavradores e o Centro Histórico, 
+                            incluindo a Zona Velha com as portas pintadas e lojas de artesanato.
+                        </p>
+                        <p>
+                            - Suba até ao Monte pelo Teleférico do Funchal, apreciando vistas 
+                            panorâmicas da cidade e do oceano.
+                        </p>
+                        <h3>Almoço:</h3>
+                        <p>
+                            - Almoce em um restaurante tradicional no Funchal ou na Ponta do Sol, 
+                            com pratos típicos como peixe-espada preto, espetadas ou lapas grelhadas.
+                        </p>
+                        <h3>Tarde:</h3>
+                        <p>
+                            - Siga para Câmara de Lobos, vila piscatória famosa pelas casas 
+                            coloridas e pela produção de poncha.
+                        </p>
+                        <p>
+                            - Continue para Ribeira Brava e depois para a Ponta do Sol, 
+                            onde pode relaxar na praia ou nos miradouros da região.
+                        </p>
+                        <h3>Fim de tarde:</h3>
+                        <p>
+                            - Continue para Ribeira Brava e depois para a Ponta do Sol, 
+                            onde pode relaxar na praia ou nos miradouros da região.
+                        </p>
+                        <h3>Opcional:</h3>
+                        <p>
+                            - Faça paragens em miradouros locais, desfrute de doces regionais e 
+                            prove o vinho da Madeira em pequenas adegas ao longo do percurso.
+                        </p>
+
+                        <img src="../imagens/rota costa sul.png" alt="rota funchal" class="imagem_rota">
+                    </section>
+                </div>
+                <div class="painel painel4">
+                    <h4>Porto Santo</h4>
+                    <section>
+                        <div class="horizontal-esquerda"> 
+                            <input type="checkbox" id="like3" hidden>
+                            <label for="like3" class="heart"></label>
+                            <a class="btn" href="../10-erro/erro404_login.html">Reservar</a>
+                        </div>
+                        <h3>Manhã:</h3>
+                        <p>
+                            - Comece na Praia de Porto Santo, famosa pela sua areia dourada e 
+                            águas cristalinas, perfeita para um passeio relaxante ou nadar.
+                        </p>
+                        <p>
+                            - Caminhe até o Ilhéu de Porto Santo, um pequeno ilhéu rochoso 
+                            que oferece ótimas vistas para fotos e observação de aves marinhas.
+                        </p>
+                        <h3>Almoço:</h3>
+                        <p>
+                            - Almoce num restaurante local junto à praia, experimentando peixe 
+                            fresco ou pratos típicos madeirenses.
+                        </p>
+                        <h3>Tarde:</h3>
+                        <p>
+                            - Suba ao Pico do Castelo, para uma vista panorâmica de toda a 
+                            ilha e do oceano Atlântico.
+                        </p>
+                        <p>
+                            - Visite o Miradouro do Pico da Ana Ferreira, outro ponto de observação 
+                            com vistas deslumbrantes sobre a costa e a paisagem interior da ilha.
+                        </p>
+                        <p>
+                            - Explore a Vereda do Pico Branco, uma curta trilha que permite contato 
+                            com a flora local e vistas sobre a ilha.
+                        </p>
+                        <h3>Fim de tarde:</h3>
+                        <p>
+                            - Termine no centro da vila, passeando pelo comércio local, ou aproveite 
+                            mais tempo na praia para relaxar e contemplar o pôr do sol.
+                        </p>
+                        <h3>Opcional:</h3>
+                        <p>
+                            - Visite o Museu de Porto Santo ou participe de atividades de mergulho ou 
+                            passeios 4x4 para explorar zonas menos acessíveis da ilha.
+                        </p>
+
+                        <img src="../imagens/rota porto santo.png" alt="rota funchal" class="imagem_rota">
+                    </section>
+                </div>
+            
+            </div>
+        </section>
+        <section>
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>1. Posso levar o meu cão em todos os passeios?</summary>
+                <p>Nem todos os passeios permitem cães. Verifique cada tour antes de reservar.</p>
+            </details>
+
+            <details>
+                <summary>2. O guia leva cães nos passeios?</summary>
+                <p>Sim, o guia pode levar os seus próprios cães, mas todos os animais são supervisionados e bem comportados para garantir a segurança de todos.</p>
+            </details>
+
+            <details>
+                <summary>3. Há limite de tamanho ou número de cães por passeio?</summary>
+                <p>Sim, para segurança e conforto, cada tour tem limites de cães e tamanho permitido.</p>
+            </details>
+
+            <details>
+                <summary>4. Preciso de vacinas ou certificados de saúde para o meu cão?</summary>
+                <p>Sim, todos os cães devem ter <strong>vacinas em dia</strong> e, preferencialmente, <strong>certificado de saúde atualizado</strong>.</p>
+            </details>
+
+            <details>
+                <summary>5. É necessário usar trela ou focinheira?</summary>
+                <p>Sim, trela é obrigatória; focinheira pode ser exigida em certas atividades ou raças.</p>
+            </details>
+
+            <details>
+                <summary>6. O meu cão será seguro durante o transporte?</summary>
+                <p>Sim, todos os veículos e equipamentos são adaptados para transporte seguro de cães.</p>
+            </details>
+
+            <details>
+                <summary>7. Existem taxas adicionais para levar cães?</summary>
+                <p>Alguns tours cobram um valor simbólico por animal de estimação.</p>
+            </details>
+
+            <details>
+                <summary>8. Posso reservar apenas para o meu cão e acompanhante?</summary>
+                <p>Sim, desde que haja disponibilidade. Informe a empresa no momento da reserva.</p>
+            </details>
+
+            <details>
+                <summary>9. E se o meu cão ficar ansioso durante o passeio?</summary>
+                <p>O guia adapta o ritmo do passeio e garante <strong>supervisão constante</strong>, inclusive com os seus próprios cães como exemplo de comportamento calmo.</p>
+            </details>
+
+            <details>
+                <summary>10. Meu cão pode interagir com outros cães do passeio?</summary>
+                <p>Sim, sempre de forma supervisionada para garantir segurança e conforto de todos os animais.</p>
+            </details>
+        </section>
+        <section>
+            <h2>Comentários</h2>
+            <div class="conj_cards">
+                <div class="card">
+                    <h4>Maria</h4>
+                    <img src="../imagens/perfil1.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Adorei o passeio! Levar o meu cão foi super fácil, o guia foi muito atencioso e todos os 
+                        animais se deram bem. Recomendo a todos que querem viajar com os seus pets!” – Maria S.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>Ana</h4>
+                    <img src="../imagens/perfil2.jpeg" alt="catamaran" class="fund_img">
+                    <p>“Muito profissional e acolhedor. O guia levou os seus próprios cães, que ajudaram a manter 
+                        os nossos calmos e confortáveis durante o passeio.” – Ana R.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>João</h4>
+                    <img src="../imagens/perfil3.jpeg" alt="catamaran" class="fund_img">
+                    <p>
+                        “Experiência incrível! O meu cão parecia estar tão feliz quanto eu. 
+                        Tudo organizado, seguro e com muita atenção aos animais.” – João P.
+                    </p>
+                </div>
+                
+            </div>
+           
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="../01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="../10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="../10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="../10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="../10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

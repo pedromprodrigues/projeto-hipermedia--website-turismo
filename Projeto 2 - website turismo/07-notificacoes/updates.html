@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Notificaçoes - Updates</title>
+</head>
+<body>
+    <header>
+        <!--menu sidebar-paginas-->
+        <nav class="sidebar-paginas">
+            <!--menu hamburguer-->
+            <details class="menu">
+                <summary class="hamburguer">&#8801;</summary>
+                <div class="conj_menus">
+                    <!--submenu geral-->
+                    <details class="submenu">
+                        <summary>Geral</summary>
+                        <ul>
+                            <li><button class="pref" popovertarget="preferencias">Preferências</button></li>
+                            <li><a href="../01-geral/dados_pessoais.html">Dados Pessoais</a></li>
+                            <li><a href="../01-geral/privacidade.html">Privacidade</a></li>
+                            <li><a href="../01-geral/ajuda_login.html">Ajuda</a></li>
+                        </ul>
+                        <!--popover preferencias-->
+                        <div id="preferencias" popover="auto" class="popover_box">
+                            <h3>Preferências</h3>
+                            <!--toggle de lingua, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Lingua</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>PT / EN</small>
+                            </div>
+                            <!--toggle tema, este toggle muda o tema do site-->
+                            <div class="defenicoes">
+                                <span>Tema</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>Claro / Escuro</small>
+                            </div>
+                            <!--toggle moeda, este toggle é so visual-->
+                            <div class="defenicoes">
+                                <span>Moeda</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                                <small>€ / $</small>
+                            </div>
+                            <button class="pref fechar" popovertarget="preferencias" popovertargetaction="hide">Fechar</button>
+                        </div>
+                    </details>
+                    <!--submenu lugares para ver-->
+                    <details class="submenu">
+                        <summary>Lugares para Ver</summary>
+                        <ul>
+                            <li><a href="../02-lugares/principais_login.html">Principais Atrações</a></li>
+                            <li><a href="../02-lugares/Cnorte_login.html">Costa Norte</a></li>
+                            <li><a href="../02-lugares/Csul_login.html">Costa Sul</a></li>
+                            <li><a href="../02-lugares/PortoSanto_login.html">Porto Santo</a></li>
+                            <li><a href="../02-lugares/capital_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu coisas para fazer-->
+                    <details class="submenu">
+                        <summary>Coisas para Fazer</summary>
+                        <ul>
+                            <li><a href="../03-coisas/melhores_login.html">Melhores experiências</a></li>
+                            <li><a href="../03-coisas/CostaNorte_login.html">Costa Norte</a></li>
+                            <li><a href="../03-coisas/CostaSul_login.html">Costa Sul</a></li>
+                            <li><a href="../03-coisas/Porto_Santo_coisas_login.html">Porto Santo</a></li>
+                            <li><a href="../03-coisas/capital_coisas_login.html">Capital</a></li>
+                        </ul>
+                    </details>
+                    <!--submenu inspiracao de viagem-->
+                    <details class="submenu">
+                        <summary>Inspiração de Viagem</summary>
+                        <ul>
+                            <li><a href="../04-inspiracao/tendencias_login.html">Têndencias</a></li>
+                            <li><a href="../04-inspiracao/melhores_visitar_login.html">Melhores lugares para visitar</a></li>
+                            <li><a href="../04-inspiracao/urbana_login.html">Urbano</a></li>
+                            <li><a href="../04-inspiracao/rural_login.html">Rural</a></li>
+                            <li><a href="../04-inspiracao/guias_login.html">Guias</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </details>
+            <!--barra de pesquisa, não funciona, so visual-->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar no site..." id="search-input">
+                <button id="search-btn">🔍</button>
+            </div>
+            <!--conteudo a direita-->
+            <div class="conteudo_direita">
+                <!--carrinho-->
+                <a class="hamburguer" href="../05-carrinho/lista_artigos.html"><img src="../imagens/icons8-carrito-de-compras-24.png" alt=""></a>
+                <!--favoritos-->
+                <a class="hamburguer" href="../06-favoritos/lista_fav.html"><img class="icon" src="../imagens/icons8-favoritos-50.png" alt=""></a>
+                <!--notificacoes-->
+                <a class="hamburguer" href="./07-notificacoes/updates.html"><img class="icon" src="../imagens/icons8-notificaciones-78.png" alt=""></a>
+                <!--reservas-->
+                <a class="hamburguer" href="../08-reservas/atividades.html"><img class="icon" src="../imagens/icons8-reloj-50.png" alt=""></a>
+                <!--opcao inicio-->
+                <a class="hamburguer" href="../09-Login/index_apos_login.html"><img src="../imagens/icons8-casa-24.png" alt="inicio" class="icon"></a>
+                <!--opcao sair-->
+                <div class="login">
+                    <a class="login_texto" href="../index.html">Sair</a>
+                </div>
+            </div>
+        </nav>
+        
+        
+    </header>
+
+    <main class="main">
+        <!--Alertas-->
+        <section>
+            <h2>Alertas</h2>
+            <h4>Proxima atividade a realizar</h4>
+            <table class="carrinho">
+                <thead>
+                    <th>Actividade</th>
+                    <th>Classificação</th>
+                    <th>Língua</th>
+                    <th>Data</th>
+                    <th>Participantes</th>
+                    <th>Confirmação</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="atividade">
+                            <img src="../imagens/pico-ruivo-amanhecer.jpeg" alt="pico ruivo">
+                            <div>
+                                <strong>Pico do Ruivo</strong><br>
+                                <p>Caminhada ao nascer do sol</p>
+                            </div>
+                        </td>
+                        <td class="estrelas center">
+                            ★★★★★
+                        </td>
+                        <td class="center">
+                            PT
+                        </td>
+                        <td class="center">
+                            14/01/2026
+                        </td>
+                        <td class="center">
+                            2
+                        </td>
+                        <td class="center">
+                            <a class="btn" href="../10-erro/erro404_login.html">Confirmar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--recibos-->
+        <section>
+            <h2>Recibos</h2>
+            <div>
+                <p><strong>Cliente:</strong> Anonimo</p>
+                <p><strong>Email:</strong> anonimo@email.com</p>
+                <p><strong>Data:</strong> 11/01/2026</p>
+            </div>
+            <table class="carrinho">
+                <thead>
+                    <th>Atividade</th>
+                    <th>Data</th>
+                    <th>Participances</th>
+                    <th>Custo Unitário</th>
+                    <th>Total</th>
+                    <th>Recibo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">
+                            Levada do Caldeirão Verde
+                        </td>
+                        <td class="center">
+                            10/01/2026
+                        </td>
+                        <td class="center">
+                            2
+                        </td>
+                        <td class="center">
+                            €40
+                        </td>
+                        <td class="center">
+                            €80
+                        </td>
+                        <td class="center">
+                            <a class="btn" href="../10-erro/erro404_login.html">Pedir Recibo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">
+                            Jeep Safari Porto Santo
+                        </td>
+                        <td class="center">
+                            13/12/2025
+                        </td>
+                        <td class="center">
+                            3
+                        </td>
+                        <td class="center">
+                            €75
+                        </td>
+                        <td class="center">
+                            €225
+                        </td>
+                        <td class="center">
+                            <a class="btn" href="../10-erro/erro404_login.html">Pedir Recibo</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">
+                            Amanhecer Pico Ruivo
+                        </td>
+                        <td class="center">
+                            28/11/2025
+                        </td>
+                        <td class="center">
+                            1
+                        </td>
+                        <td class="center">
+                            €40
+                        </td>
+                        <td class="center">
+                            €40
+                        </td>
+                        <td class="center">
+                            <a class="btn" href="../10-erro/erro404_login.html">Pedir Recibo</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Change log-->
+        <section>
+            <h2>Updates</h2>
+            <!-- Versão 1.3.0 -->
+            <div class="card">
+                <h3>Versão 1.3.0 - 11/01/2026</h3>
+                <div>
+                <strong>Added:</strong>
+                <ul>
+                    <li>Nova página de <strong>carrinho de compras</strong> com tabela interativa.</li>
+                    <li>Sistema de <strong>favoritos</strong> para marcar atividades.</li>
+                    <li>Rota sugerida para <strong>Costa Sul da Madeira</strong>.</li>
+                </ul>
+
+                <strong>Changed:</strong>
+                <ul>
+                    <li>Layout das <strong>tabs</strong> ajustado para melhor visualização no mobile.</li>
+                    <li>Atualização das imagens das atividades no carrinho.</li>
+                </ul>
+
+                <strong>Fixed:</strong>
+                <ul>
+                    <li>Corrigido bug no toggle do coração de favoritos.</li>
+                    <li>Ajuste do hover nas linhas da tabela do carrinho.</li>
+                </ul>
+                </div>
+            </div>
+            <!-- Versão 1.2.0 -->
+            <div class="card">
+                <h3>Versão 1.2.0 - 01/12/2025</h3>
+                <div>
+                <strong>Added:</strong>
+                <ul>
+                    <li>Sistema de <strong>seleção de idiomas</strong> (EN/PT) para cada atividade.</li>
+                    <li>Coluna de <strong>máximo de participantes</strong> na tabela do carrinho.</li>
+                    <li>Página de <strong>pagamento</strong> com campos de detalhes do cliente.</li>
+                </ul>
+
+                <strong>Changed:</strong>
+                <ul>
+                    <li>Estilo das tabs e botões de reserva melhorado.</li>
+                    <li>Ícones de favoritos padronizados em todo o site.</li>
+                </ul>
+
+                <strong>Fixed:</strong>
+                <ul>
+                    <li>Problema de alinhamento das imagens na tabela do carrinho.</li>
+                    <li>Corrigido erro de scroll que escondia o popover.</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    </main>
+    
+    <footer class="footer">
+        <!--breve informacao do site-->
+        <div class="footer-column">
+            <h4>Explore Madeira</h4>
+            <p>Experiências autênticas na ilha da Madeira, criadas por locais, para quem quer conhecer a ilha de forma verdadeira e próxima.</p>
+        </div>
+        <!--links rapidos-->
+        <div class="footer-column">
+            <h4>Links rápidos</h4>
+            <ul>
+                <li><a href="/04-inspiracao/rural_login.html">Tours</a></li>
+                <li><a href="/03-coisas/melhores_login.html">Experiências</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="../01-geral/ajuda_login.html">Contactos</a></li>
+            </ul>
+        </div>
+        <!--contactos-->
+        <div class="footer-column">
+            <h4>Contactos</h4>
+            <ul>
+                <li>📍 Ilha da Madeira, Portugal</li>
+                <li>📧 info@exploremadeira.pt</li>
+                <li>📞 +351 919 191 919</li>
+                <li>🕒 Todos os dias · 9h – 23h</li>
+            </ul>
+        </div>
+        <!--redes sociais-->
+        <div class="footer-column">
+            <h4>Segue-nos</h4>
+            <div class="sociais">
+                <a href="../10-erro/erro404_login.html">Instagram</a>
+                <a href="10-erro/erro404_login.html">Facebook</a>
+                <a href="../10-erro/erro404_login.html">WhatsApp</a>
+            </div>
+        </div>
+        <!--informaçoes legais-->
+        <div class="footer-bottom">
+            <p>© 2026 Explore Madeira · Todos os direitos reservados</p>
+            <a href="../10-erro/erro404_login.html">Política de Privacidade</a>
+            <a href="../10-erro/erro404_login.html">Termos & Condições</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
